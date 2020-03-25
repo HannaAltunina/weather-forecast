@@ -1,0 +1,104 @@
+.main {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main__wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.info-table {
+  margin: 0 auto;
+  font-size: 16px;
+  border-spacing: 10px;
+}
+
+.info-table__description {
+  font-weight: 300;
+}
+
+.main__map {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.resume__location {
+  font-size: 36px;
+  text-align: center;
+}
+
+.resume_weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume__temperature {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.resume__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  background-image: url("../../img/Cloudy-02.svg");
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.resume__description {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .main__wrapper {
+    padding: 20px 40px;
+  }
+
+  .info-table {
+    font-size: 18px;
+    border-spacing: 20px;
+  }
+
+  .resume__location {
+    font-size: 46px;
+  }
+
+  .resume__temperature {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .resume__description {
+    font-size: 20px;
+    text-align: center;
+  }  
+}
+
+@media(min-width: 1250px) {
+  .main__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .resume__location {
+    font-size: 58px;
+  }
+
+  .resume__temperature {
+    font-size: 50px;
+  }
+
+  .resume__description {
+    font-size: 26px;
+  }
+}

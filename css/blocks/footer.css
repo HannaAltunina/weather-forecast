@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #999999;
+  margin-top: -3px;
+}
+
+.footer__wrapper {
+  width: 100%;
+}
+
+
+@media(min-width: 768px) {
+  .footer {
+    padding: 20px 40px;
+  }
+}
+
+@media(min-width: 1250px) {
+  .footer {
+    margin-top: -17px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+}
