@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Good Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <form class="header__data-form data-form" action="#" method="get">
+          <ul class="data-form__list">
+            <li class="data-form__item">
+              <input class="data-form__input data-form__input--radio" type="radio" name="data-type" id="xhr-type" value="xhr" checked>
+              <label for="xhr-type" class="data-form__label">XHR</label>
+            </li>
+            <li class="data-form__item">
+              <input class="data-form__input data-form__input--radio" type="radio" name="data-type" id="fetch-type" value="fetch">
+              <label for="fetch-type" class="data-form__label">fetch</label>
+            </li>
+          </ul>
+        </form>
+  
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">About</a>
+            </li>
+            <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Main</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Author</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <form class="header__search-form search-form" action="#" method="get">
+          <button class="search-form__button" type="button"><span class="visually-hidden">Search</span></button>
+          <input class="search-form__input" type="text" name="search" placeholder="city">
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <section class="main__information weather-information">
+          <table class="weather-information__table info-table">
+            <tr class="info-table__row title-row">
+              <th class="info-table__title">Wind</th>
+              <th class="info-table__title">Pressure</th>
+              <th class="info-table__title">UV Index</th>
+              <th class="info-table__title">Humidity</th>
+              <th class="info-table__title">Visibility</th>
+            </tr>
+            <tr class="info-table__row description-row">
+              <th class="info-table__description">15 m/s</th>
+              <th class="info-table__description">15 hPa</th>
+              <th class="info-table__description">0</th>
+              <th class="info-table__description">15%</th>
+              <th class="info-table__description">15 km</th>
+            </tr>
+          </table>
+          <article class="weather-information__resume resume">
+            <h1 class="resume__location">
+              Minsk
+            </h1>
+            <div class="resume_weather">
+              <div class="resume__image"><span class="visually-hidden">Weather illustration</span></div>
+              <h2 class="resume__temperature">7<sup>o</sup></h2>
+            </div>
+            <p class="resume__description">Mostly cloudy throughout the day</p>
+          </article>
+        </section>
+      </div>
+      <iframe class="main__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150505.20100806304!2d27.453285608824913!3d53.88476083110509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2sMinsk!5e0!3m2!1sen!2sby!4v1582712150971!5m2!1sen!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__user-history user-history">
+          <h3 class="user-history__title">History</h3>
+          <ul class="user-history__list">
+            <li class="user-history__item">
+              Homel
+            </li>
+            <li class="user-history__item">
+              Hrodna
+            </li>
+            <li class="user-history__item">
+              Minsk
+            </li>
+            <li class="user-history__item">
+              Brest
+            </li>
+            <li class="user-history__item">
+              Vorsha
+            </li>
+          </ul>
+        </div>
+        <div class="footer__app-download app-download">
+          <ul class="app-download__list">
+            <li class="app-download__item">
+              <a class="app-download__link" href="#">
+                <img class="app-download__image" src="img/google-app.png" alt="Google Play App" width="70">
+              </a>
+            </li>
+            <li class="app-download__item">
+              <a class="app-download__link" href="#">
+                <img class="app-download__image" src="img/apple-app.png" alt="Apple Store App" width="70">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__user-favourites user-favourites">
+          <h3 class="user-favourites__title">Favourites</h3>
+          <ul class="user-favourites__list">
+            <li class="user-favourites__item">
+              Homel
+            </li>
+            <li class="user-favourites__item">
+              Minsk
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

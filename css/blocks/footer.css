@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #999999;
+  margin-top: -3px;
+}
+
+.footer__wrapper {
+  width: 100%;
+}
+
+.user-history__list,
+.app-download__list,
+.user-favourites__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-history__title,
+.user-favourites__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.user-history__item,
+.user-favourites__item {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.app-download__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-download__item:first-child {
+  margin-right: 10px;
+}
+
+.app-download__item:last-child {
+  margin-top: -3px;
+}
+
+
+@media(min-width: 768px) {
+  .footer {
+    padding: 20px 40px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-history__title,
+  .user-favourites__title {
+    font-size: 26px;
+  }
+
+  .user-history__item,
+  .user-favourites__item {
+    font-size: 20px;
+    padding: 8px 0;
+  }
+
+  .app-download__image {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media(min-width: 1250px) {
+  .footer {
+    margin-top: -17px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .app-download__image {
+    width: 170px;
+  }
+}
